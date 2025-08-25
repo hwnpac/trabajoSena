@@ -1,0 +1,172 @@
+/* ========= RESET ========= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ========= BODY ========= */
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: linear-gradient(135deg, #0d1c5e, #6578e4);
+  color: #e3dde9;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* ========= HEADER ========= */
+header {
+  background-color: rgba(18, 21, 161, 0.1);
+  backdrop-filter: blur(6px);
+  color: white;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ========= FORM WRAPPER ========= */
+form {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.25), 
+              -8px -8px 20px rgba(255, 255, 255, 0.1),
+              inset 2px 2px 5px rgba(255, 255, 255, 0.1),
+              inset -2px -2px 5px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ========= INPUTS ========= */
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+  background: rgba(255, 255, 255, 0.08);
+  border: none;
+  padding: 14px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  font-size: 16px;
+  color: #fff;
+  box-shadow: inset 4px 4px 8px rgba(0,0,0,0.25),
+              inset -4px -4px 8px rgba(255,255,255,0.1);
+  outline: none;
+  transition: 0.3s ease;
+}
+
+form input::placeholder {
+  color: #ccc;
+}
+
+form input:focus {
+  box-shadow: inset 2px 2px 5px rgba(0,0,0,0.3),
+              inset -2px -2px 5px rgba(255,255,255,0.1);
+}
+
+/* ========= SUBMIT BUTTON ========= */
+form input[type="submit"] {
+  background: linear-gradient(145deg, #7a78dd, #615acb);
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 6px 0 #3e4a99;
+  transition: all 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+form input[type="submit"]:active {
+  transform: translateY(2px);
+  box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* ========= LINKS ========= */
+a {
+  color: #836dff;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 15px;
+  display: block;
+  transition: 0.3s;
+}
+
+a:hover {
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+/* ========= LOGOUT BUTTON ========= */
+a.logout-button {
+  background: linear-gradient(145deg, #ef4444, #d13434);
+  padding: 10px 16px;
+  color: white;
+  border-radius: 12px;
+  display: inline-block;
+  box-shadow: 0 6px 0 #992222;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+a.logout-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* ========= MESSAGES ========= */
+p {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff8dc;
+  padding: 12px;
+  border-radius: 12px;
+  max-width: 400px;
+  margin-top: 20px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* ========= TEXT SMALL ========= */
+span {
+  color: white;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* ========= RESPONSIVE ========= */
+@media (max-width: 480px) {
+  form {
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+}
+.error-message {
+  background-color: #10096b;
+  color: #c47975;
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 400px;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
